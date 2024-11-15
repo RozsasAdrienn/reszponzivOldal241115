@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+nav{
+    grid-column: 2/span 2;
+    background-image: url('kepek/dand2.jpg');
+}
+
+
+header{
+    background-image: url('kepek/dandelion.jpg');
+}
+aside
+{
+    background-image: url('kepek/dand3.jpg');
+}
+footer{
+    background-image: url('kepek/dandy.gif');
+}
+article{
+    background-image: url('kepek/dandy2.gif');
+}
+
+main>*{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 120%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    opacity: 0.4;
+}
+
+main>*:hover{
+    opacity: 1;
+}
+
+main>nav{
+    text-align: left;
+}
+
+nav>div>a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+#menu{
+    background-color: rgba(36, 4, 199, 0.159);
+    padding: 20px;
+}
+
